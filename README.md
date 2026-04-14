@@ -1,18 +1,18 @@
 # 📧 Email Campaign Writer
 
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/) 
-[![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE) 
-[![Gemma 4](https://img.shields.io/badge/Powered%20by-Gemma%204-orange?style=for-the-badge)](https://deepmind.google/technologies/gemma/) 
-[![Privacy First](https://img.shields.io/badge/Privacy-First-red?style=for-the-badge&logo=shield)](https://en.wikipedia.org/wiki/Privacy_by_design) 
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Gemma 4](https://img.shields.io/badge/Powered%20by-Gemma%204-orange?style=for-the-badge)](https://deepmind.google/technologies/gemma/)
+[![Privacy First](https://img.shields.io/badge/Privacy-First-red?style=for-the-badge&logo=shield)](https://en.wikipedia.org/wiki/Privacy_by_design)
 [![Ollama](https://img.shields.io/badge/Local%20LLM-Ollama-darkblue?style=for-the-badge)](https://ollama.ai)
 
 > AI-powered email composition with Ollama, Gemma 4, and privacy preservation
 
 ## 🏗️ Architecture
 
-\\\
+```
 Campaign Input → FastAPI Endpoints → Audience Analysis → Ollama + Gemma 4 Composer → Quality Checker → Campaign Ready
-\\\
+```
 
 ## ✨ Key Features
 
@@ -36,7 +36,7 @@ Campaign Input → FastAPI Endpoints → Audience Analysis → Ollama + Gemma 4 
 
 ### Installation
 
-\\\ash
+```bash
 # Clone the repository
 git clone https://github.com/kennedyraju55/email-campaign-writer.git
 cd email-campaign-writer
@@ -47,14 +47,14 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-\\\
+```
 
 ### Running
 
-\\\ash
+```bash
 # Start the application
 python -m main
-\\\
+```
 
 ## 🔧 Tech Stack
 
@@ -69,7 +69,7 @@ python -m main
 
 ## 📁 Project Structure
 
-\\\
+```
 email-campaign-writer/
 ├── src/
 │   ├── __init__.py
@@ -95,11 +95,11 @@ email-campaign-writer/
 ├── README.md                  # This file
 ├── LICENSE                    # MIT License
 └── .gitignore                 # Git ignore rules
-\\\
+```
 
 ## 📖 Usage Examples
 
-\\\python
+```python
 from src.services import processor
 
 # Initialize processor
@@ -108,16 +108,16 @@ proc = processor.MainProcessor()
 # Process your request
 result = proc.process("your input")
 print(result)
-\\\
+```
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create your feature branch (\git checkout -b feature/AmazingFeature\)
-3. Commit your changes (\git commit -m 'Add AmazingFeature'\)
-4. Push to the branch (\git push origin feature/AmazingFeature\)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## 📝 License
